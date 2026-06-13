@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaitharii Kanchipuram — Handwoven Heritage. Timeless Beauty.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Announcement bar ── -->
+  <div class="topbar">Handwoven Heritage. Timeless Beauty.</div>
+
+  <!-- ── Hero + nav share the terracotta canvas ── -->
+  <div class="heritage-banner">
+    <div class="overlay" aria-hidden="true"></div>
+    <div class="temple-stage" aria-hidden="true">
+      <img class="temple-3d" src="assets/temple.png" alt="" />
+    </div>
+    <header class="nav">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/logo.png" alt="Kaitharii emblem" />
+        <span class="brand-text">
+          <span class="brand-name">Kaitharii</span>
+          <span class="brand-sub">Kanchipuram</span>
+        </span>
+      </a>
+
+      <nav class="menu">
+        <div class="nav-item has-dd">
+          <a href="sarees.html">Sarees <i class="caret"></i></a>
+          <div class="dd">
+            <a href="sarees.html">Bridal Silks</a>
+            <a href="sarees.html">Traditional</a>
+            <a href="sarees.html">Contemporary</a>
+            <a href="sarees.html">Temple Border</a>
+          </div>
+        </div>
+        <div class="nav-item has-dd">
+          <a href="collections.html">Collections <i class="caret"></i></a>
+          <div class="dd">
+            <a href="collections.html">Heritage Edit</a>
+            <a href="collections.html">Festive</a>
+            <a href="collections.html">New Arrivals</a>
+            <a href="collections.html">Limited Looms</a>
+          </div>
+        </div>
+        <a href="our-story.html">Our Story</a>
+        <a href="weavers.html">Weavers</a>
+        <a href="journal.html">Journal</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="actions">
+        <button id="searchBtn" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+        <div class="account-wrap">
+          <button id="accountBtn" aria-label="Account" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></button>
+          <div class="account-menu" id="accountMenu" role="menu">
+            <span class="account-title">My Account</span>
+            <a href="#" role="menuitem">Sign In</a>
+            <a href="#" role="menuitem">Create Account</a>
+            <a href="#" role="menuitem">Wishlist</a>
+            <a href="#" role="menuitem">Track Order</a>
+          </div>
+        </div>
+        <button class="cart" id="cartBtn" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 8h12l-1.2 11a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge">0</span></button>
+      </div>
+    </header>
+
+    <!-- ── Hero content (right) ── -->
+    <div class="content">
+      <p class="eyebrow">
+        Woven in Kanchipuram
+        <span class="lotus-mini" aria-hidden="true"></span>
+      </p>
+      <h1 class="headline">Timeless Silks.<br/>Rooted in<br/>Heritage.</h1>
+      <div class="rule"><span></span><i></i><span></span></div>
+      <p class="lede">Handwoven Kanchipuram sarees by master weavers.<br/>Inspired by temples, rooted in culture,<br/>made for generations.</p>
+      <a class="link-cta" href="#">Explore Collection <span class="arrow">&rarr;</span></a>
+    </div>
+
+    <!-- ── Silk seal ── -->
+    <img class="kolam" src="assets/kolam.png" alt="Woman drawing a kolam" />
+  </div>
+
+  <!-- ── Land of temples ── -->
+  <section class="land">
+    <div class="land-img">
+      <img class="land-portrait" src="assets/portrait.jpg" alt="Heritage portrait" />
+    </div>
+
+    <div class="land-text">
+      <h2>The Land of Temples,<br/>The Soul of Silk.</h2>
+      <span class="lotus-mini dark" aria-hidden="true"></span>
+      <p>Kanchipuram, the sacred city of thousand temples<br/>and the birthplace of world-renowned silk weaves.<br/>Every saree carries the blessings of tradition,<br/>the skill of artisans, and the elegance of time.</p>
+      <a class="link-cta dark" href="#">Discover More <span class="arrow">&rarr;</span></a>
+    </div>
+
+    <button class="scroll-down" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+    </button>
+  </section>
+
+  <!-- Search overlay -->
+  <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+    <form class="search-form" id="searchForm">
+      <svg class="search-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" id="searchInput" placeholder="Search for sarees, collections, weaves…" autocomplete="off" />
+      <button type="submit" class="search-go">Search</button>
+      <button type="button" class="search-close" id="searchClose" aria-label="Close search">&times;</button>
+    </form>
+  </div>
+
+  <!-- Cart drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping bag">
+    <div class="cart-head">
+      <span>Your Bag</span>
+      <button id="cartClose" aria-label="Close bag">&times;</button>
+    </div>
+    <div class="cart-body">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" class="cart-empty-ic"><path d="M6 8h12l-1.2 11a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+      <p class="cart-empty">Your bag is empty.</p>
+      <a href="sarees.html" class="cart-cta">Explore Sarees</a>
+    </div>
+  </aside>
+
+  <script>
+  (function () {
+    var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    /* Scroll-driven 3D motion on the temple */
+    var temple = document.querySelector('.temple-3d');
+    var hero = document.querySelector('.heritage-banner');
+    if (temple && hero && !reduce) {
+      var ticking = false;
+      function update() {
+        var h = hero.offsetHeight || 1;
+        var y = window.scrollY || window.pageYOffset || 0;
+        var p = Math.min(1, Math.max(0, y / (h * 0.9)));   // 0 → 1 across the hero
+        var rotY = (p * 15).toFixed(2);
+        var rotX = (p * -7).toFixed(2);
+        var ty = (p * 70).toFixed(1);
+        var sc = (1 + p * 0.05).toFixed(3);
+        temple.style.transform =
+          'translateY(' + ty + 'px) rotateX(' + rotX + 'deg) rotateY(' + rotY + 'deg) scale(' + sc + ')';
+        ticking = false;
+      }
+      window.addEventListener('scroll', function () {
+        if (!ticking) { requestAnimationFrame(update); ticking = true; }
+      }, { passive: true });
+      window.addEventListener('resize', update, { passive: true });
+      update();
+    }
+
+    /* Reveal-on-scroll for the lower section (kept below the fold, so no flash) */
+    var reveals = [].slice.call(document.querySelectorAll('.land-text, .land-img'));
+    if (!reduce && 'IntersectionObserver' in window) {
+      reveals.forEach(function (el) { el.classList.add('reveal-up'); });
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.16 });
+      reveals.forEach(function (el) { io.observe(el); });
+      setTimeout(function () { reveals.forEach(function (el) { el.classList.add('in'); }); }, 2600);
+    }
+
+    /* ── Interactive header ── */
+    var $ = function (s) { return document.querySelector(s); };
+
+    // Search overlay
+    var searchOverlay = $('#searchOverlay'), searchInput = $('#searchInput');
+    function openSearch() { searchOverlay.classList.add('open'); searchOverlay.setAttribute('aria-hidden','false'); setTimeout(function(){ searchInput && searchInput.focus(); }, 120); }
+    function closeSearch() { searchOverlay.classList.remove('open'); searchOverlay.setAttribute('aria-hidden','true'); }
+    $('#searchBtn') && $('#searchBtn').addEventListener('click', openSearch);
+    $('#searchClose') && $('#searchClose').addEventListener('click', closeSearch);
+    $('#searchForm') && $('#searchForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var q = (searchInput.value || '').trim();
+      if (q) { window.location.href = 'sarees.html?q=' + encodeURIComponent(q); }
+    });
+
+    // Account menu
+    var accountBtn = $('#accountBtn'), accountMenu = $('#accountMenu');
+    function toggleAccount(e) {
+      e.stopPropagation();
+      var open = accountMenu.classList.toggle('open');
+      accountBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    accountBtn && accountBtn.addEventListener('click', toggleAccount);
+
+    // Cart drawer
+    var cartDrawer = $('#cartDrawer'), backdrop = $('#drawerBackdrop');
+    function openCart() { cartDrawer.classList.add('open'); cartDrawer.setAttribute('aria-hidden','false'); backdrop.classList.add('show'); }
+    function closeCart() { cartDrawer.classList.remove('open'); cartDrawer.setAttribute('aria-hidden','true'); backdrop.classList.remove('show'); }
+    $('#cartBtn') && $('#cartBtn').addEventListener('click', openCart);
+    $('#cartClose') && $('#cartClose').addEventListener('click', closeCart);
+    backdrop && backdrop.addEventListener('click', closeCart);
+
+    // Mobile dropdown toggle (tap to open on touch)
+    document.querySelectorAll('.has-dd > a').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        if (window.matchMedia('(max-width: 1080px)').matches) {
+          e.preventDefault();
+          a.parentElement.classList.toggle('open');
+        }
+      });
+    });
+
+    // Global dismiss
+    document.addEventListener('click', function (e) {
+      if (accountMenu && !accountMenu.contains(e.target) && e.target !== accountBtn && !accountBtn.contains(e.target)) {
+        accountMenu.classList.remove('open'); accountBtn.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { closeSearch(); closeCart(); accountMenu && accountMenu.classList.remove('open'); }
+    });
+  })();
+  </script>
+</body>
+</html>
